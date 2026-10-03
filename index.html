@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURIX | English Poster Project Presentation</title>
+    <meta name="description" content="An interactive presentation of the AURIX Wireless Headset promotional poster, branding concept, and copywriting framework.">
+    <meta property="og:title" content="AURIX | English Poster Project Presentation">
+    <meta property="og:description" content="An interactive presentation of the AURIX Wireless Headset promotional poster, branding concept, and copywriting framework.">
+    
+    <!-- Design Constitution Typography: Syne, Plus Jakarta Sans, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======================================================================
+         TOP BAR CONTRACT (One-row, 3-zone contract)
+         Zone 1: Wordmark | Zone 2: Nav Links | Zone 3: Primary Action
+         ====================================================================== -->
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <!-- Zone 1: Single text element wordmark -->
+            <a href="#hero" class="brand-wordmark">
+                AURIX<span>-X</span>
+            </a>
+
+            <!-- Zone 2: Clean text navigation links -->
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link">Overview</a>
+                <a href="#visualizer" class="nav-link">Sound Engine</a>
+                <a href="#poster" class="nav-link">The Poster</a>
+                <a href="#copywriting" class="nav-link">English Analysis</a>
+                <a href="#qr-generator" class="nav-link">QR Studio</a>
+                <a href="#repository" class="nav-link">Repository</a>
+            </nav>
+
+            <!-- Zone 3: 1 Primary action -->
+            <div class="nav-actions">
+                <button class="btn btn-primary open-preorder-trigger" id="open-preorder-btn">
+                    Get Yours Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================================================================
+             HERO SECTION: Single dominant focal carrier & concrete value prop
+             ================================================================== -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <!-- Zero-Pill Metadata Line -->
+                    <div class="metadata-line">
+                        <span>English Language & Acoustic Project</span>
+                        <span class="metadata-separator">·</span>
+                        <span class="accent">AURIX-X Flagship Edition</span>
+                        <span class="metadata-separator">·</span>
+                        <span>2026 Academic Showcase</span>
+                    </div>
+
+                    <h1>Sound, Redefined. <span class="gradient-text">Hear Beyond Silence.</span></h1>
+
+                    <p class="hero-desc">
+                        An interactive presentation of the AURIX-X Wireless Headset promotional poster, branding concept, and copywriting framework. Experience browser-synthesized acoustics, live linguistic analysis, and dynamic campaign generation.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#visualizer" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M8 5v14l11-7z"/></svg>
+                            Launch Sound Engine
+                        </a>
+                        <a href="#poster" class="btn btn-secondary">
+                            Explore Poster Breakdown
+                        </a>
+                    </div>
+
+                    <div class="hero-specs-row">
+                        <div class="hero-spec-item">
+                            <div class="spec-value">40mm</div>
+                            <div class="spec-label">Beryllium Drivers</div>
+                        </div>
+                        <div class="hero-spec-item">
+                            <div class="spec-value">-42 dB</div>
+                            <div class="spec-label">Hybrid ANC Depth</div>
+                        </div>
+                        <div class="hero-spec-item">
+                            <div class="spec-value">&lt; 0.008%</div>
+                            <div class="spec-label">Total Harmonic Dist.</div>
+                        </div>
+                        <div class="hero-spec-item">
+                            <div class="spec-value">52 Hrs</div>
+                            <div class="spec-label">Extended Playtime</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual-card">
+                    <img src="hero-aurix-x.jpg" alt="AURIX-X Flagship Wireless Headphones" class="hero-visual-img" referrerpolicy="no-referrer">
+                    <div class="hero-visual-badge">
+                        <span class="badge-title">AURIX-X Engineering Prototype</span>
+                        <span class="badge-meta">OBSIDIAN / CRIMSON CHASSIS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             FEATURE 1: REAL-TIME WEB AUDIO VISUALIZER & SYNTHESIZER
+             ================================================================== -->
+        <section id="visualizer" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">01. Acoustic Architecture</span>
+                    <h2>Real-Time Acoustic Engine</h2>
+                    <p class="section-subtitle">
+                        Synthesize real harmonic frequencies directly in your browser. The canvas visualizer responds dynamically to Web Audio API oscillators, demonstrating the driver linearity of the AURIX-X acoustic chamber.
+                    </p>
+                </div>
+
+                <div class="audio-visualizer-container">
+                    <div class="visualizer-topbar">
+                        <!-- Soundscape Segmented Tab Controls -->
+                        <div class="soundscape-tabs" role="tablist">
+                            <button class="soundscape-tab active" data-preset="binaural" role="tab">Binaural Harmonics (432 Hz)</button>
+                            <button class="soundscape-tab" data-preset="subbass" role="tab">Sub-Bass Resonance (40 Hz)</button>
+                            <button class="soundscape-tab" data-preset="sweep" role="tab">Acoustic Sweep (20Hz - 20kHz)</button>
+                            <button class="soundscape-tab" data-preset="anc" role="tab">ANC Phase Inversion</button>
+                        </div>
+                        <div id="preset-description" class="metadata-line" style="margin-bottom: 0;">
+                            Harmonic 432 Hz carrier frequency with dual-ear binaural offset designed for spatial focus.
+                        </div>
+                    </div>
+
+                    <div class="canvas-wrapper">
+                        <canvas id="visualizer-canvas"></canvas>
+                    </div>
+
+                    <div class="visualizer-controls">
+                        <div class="audio-action-cluster">
+                            <button id="audio-play-btn" class="btn btn-primary">
+                                <span id="audio-btn-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M8 5v14l11-7z"/></svg>
+                                </span>
+                                <span id="audio-btn-text">Start Audio Engine</span>
+                            </button>
+
+                            <div class="volume-control-cluster">
+                                <span class="volume-label">Master Level:</span>
+                                <input type="range" id="volume-slider" class="volume-slider" min="0" max="100" value="70">
+                                <span id="volume-val" class="volume-val-display">70%</span>
+                            </div>
+                        </div>
+
+                        <div class="metadata-line" style="margin-bottom: 0;">
+                            <span>Hardware DSP Loop</span>
+                            <span class="metadata-separator">·</span>
+                            <span>24-bit / 96kHz Lossless Synthesizer</span>
+                        </div>
+                    </div>
+
+                    <!-- Telemetry Strip -->
+                    <div class="telemetry-row">
+                        <div class="telemetry-item">
+                            <span class="telemetry-label">Center Frequency</span>
+                            <span id="telemetry-freq" class="telemetry-val">-- Hz</span>
+                        </div>
+                        <div class="telemetry-item">
+                            <span class="telemetry-label">Output Level</span>
+                            <span id="telemetry-gain" class="telemetry-val">-∞ dB</span>
+                        </div>
+                        <div class="telemetry-item">
+                            <span class="telemetry-label">Harmonic Purity</span>
+                            <span id="telemetry-thd" class="telemetry-val">0.004%</span>
+                        </div>
+                        <div class="telemetry-item">
+                            <span class="telemetry-label">Engine Pipeline</span>
+                            <span id="telemetry-mode" class="telemetry-val">STANDBY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             FEATURE 2: INTERACTIVE POSTER BREAKDOWN & HOTSPOT INSPECTOR
+             ================================================================== -->
+        <section id="poster" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">02. Design & Composition</span>
+                    <h2>Project Poster Breakdown</h2>
+                    <p class="section-subtitle">
+                        Interactive anatomical deconstruction of the promotional campaign poster. Click any pulsing hotspot on the poster frame to inspect its visual strategy, copywriting purpose, and technical specifications.
+                    </p>
+                </div>
+
+                <div class="poster-breakdown-grid">
+                    <!-- Interactive Poster Frame with Hotspots -->
+                    <div class="poster-interactive-frame">
+                        <img src="poster-aurix-x.jpg" alt="AURIX-X Promotional Campaign Poster" class="poster-image" referrerpolicy="no-referrer">
+
+                        <!-- Hotspot 1: Headline & Paradox Hook -->
+                        <div class="poster-hotspot active" data-id="1" style="top: 15%; left: 50%;" title="Click to inspect Headline & Paradox Hook">
+                            1
+                        </div>
+
+                        <!-- Hotspot 2: 40mm Beryllium Drivers -->
+                        <div class="poster-hotspot" data-id="2" style="top: 50%; left: 34%;" title="Click to inspect Beryllium Transducers">
+                            2
+                        </div>
+
+                        <!-- Hotspot 3: Hybrid ANC Sensor Array -->
+                        <div class="poster-hotspot" data-id="3" style="top: 60%; left: 66%;" title="Click to inspect ANC Inversion Vents">
+                            3
+                        </div>
+
+                        <!-- Hotspot 4: Ergonomic Headband Arch -->
+                        <div class="poster-hotspot" data-id="4" style="top: 30%; left: 50%;" title="Click to inspect Tactile Ergonomic Arch">
+                            4
+                        </div>
+
+                        <!-- Hotspot 5: Dynamic Campaign QR Anchor -->
+                        <div class="poster-hotspot" data-id="5" style="top: 86%; left: 50%;" title="Click to inspect Dynamic Campaign QR Anchor">
+                            5
+                        </div>
+
+                        <!-- Overlay Layer Switcher -->
+                        <div class="poster-controls-bar">
+                            <div class="layer-controls">
+                                <button class="layer-btn active" data-layer="all">All Layers</button>
+                                <button class="layer-btn" data-layer="copy">Copywriting</button>
+                                <button class="layer-btn" data-layer="hardware">Hardware</button>
+                                <button class="layer-btn" data-layer="design">Design Grid</button>
+                            </div>
+                            <button id="open-lightbox-btn" class="btn btn-outline btn-sm">
+                                Fullscreen View
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Inspector Panel -->
+                    <div class="inspector-panel">
+                        <div id="inspector-tag" class="inspector-tag-line">Rhetorical Hook · Copywriting</div>
+                        <h3 id="inspector-title" class="inspector-title">Slogan & Headline Typography</h3>
+
+                        <div class="inspector-section">
+                            <div class="inspector-heading">Visual Placement & Role</div>
+                            <p id="inspector-desc" class="inspector-desc">
+                                "Hear Beyond Silence." Anchored at optical top-center in customized high-contrast grotesque typography. It immediately subverts expectations through cognitive contrast.
+                            </p>
+                        </div>
+
+                        <div class="inspector-section">
+                            <div class="inspector-heading">Linguistic & Advertising Strategy</div>
+                            <p id="inspector-rationale" class="inspector-desc">
+                                Juxtaposing hearing against absolute silence positions the AURIX-X active noise cancellation not as sound erasure, but as acoustic illumination.
+                            </p>
+                        </div>
+
+                        <div class="inspector-section">
+                            <div class="inspector-heading">Design Specifications</div>
+                            <div id="inspector-spec" class="inspector-spec-box">
+                                Tracking: -0.02em · Contrast: 18.2:1 against Obsidian · Type: High-Legibility Display
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 24px;">
+                            <button class="btn btn-secondary open-preorder-trigger" style="width: 100%;">
+                                Pre-Order AURIX-X Flagship Edition ($299)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             FEATURE 3: ENGLISH COPYWRITING & RHETORICAL ANALYSIS SANDBOX
+             ================================================================== -->
+        <section id="copywriting" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">03. Language & Persuasion</span>
+                    <h2>English Copywriting & Rhetorical Analysis</h2>
+                    <p class="section-subtitle">
+                        An academic analysis of the persuasive techniques, diction, and linguistic devices employed across the AURIX-X campaign. Test your own promotional slogans in the live copywriting sandbox below.
+                    </p>
+                </div>
+
+                <div class="copywriting-grid">
+                    <!-- Left: Academic Breakdown Cards -->
+                    <div class="rhetorical-table-card">
+                        <div class="technique-filter-bar">
+                            <button class="technique-tab active" data-filter="all">All Devices</button>
+                            <button class="technique-tab" data-filter="paradox">Paradox</button>
+                            <button class="technique-tab" data-filter="diction">Sensory Diction</button>
+                            <button class="technique-tab" data-filter="imperative">Imperative</button>
+                            <button class="technique-tab" data-filter="etymology">Etymology</button>
+                        </div>
+
+                        <div class="rhetorical-card" data-category="paradox">
+                            <div class="rhetorical-card-header">
+                                <span class="rhetorical-label">Paradox & Antithesis</span>
+                                <span class="metadata-line" style="margin-bottom: 0;">Slogan Hook</span>
+                            </div>
+                            <div class="rhetorical-quote">"Hear Beyond Silence."</div>
+                            <p class="rhetorical-desc">
+                                Pairs hearing (auditory perception) with silence (absence of sound). This juxtaposition emphasizes active noise cancellation by suggesting that eliminating ambient noise unlocks hidden layers in music.
+                            </p>
+                        </div>
+
+                        <div class="rhetorical-card" data-category="diction">
+                            <div class="rhetorical-card-header">
+                                <span class="rhetorical-label">Sensory & Technical Diction</span>
+                                <span class="metadata-line" style="margin-bottom: 0;">Body Copy</span>
+                            </div>
+                            <div class="rhetorical-quote">"Precision-tuned drivers engineered to isolate every layer of your soundscape."</div>
+                            <p class="rhetorical-desc">
+                                Leverages words like <em>precision-tuned</em>, <em>drivers</em>, and <em>soundscape</em>. These terms construct authority (Logos) and evoke high-end acoustic craftsmanship rather than commodity consumer audio.
+                            </p>
+                        </div>
+
+                        <div class="rhetorical-card" data-category="imperative">
+                            <div class="rhetorical-card-header">
+                                <span class="rhetorical-label">Imperative Command</span>
+                                <span class="metadata-line" style="margin-bottom: 0;">Call to Action (CTA)</span>
+                            </div>
+                            <div class="rhetorical-quote">"Experience True Immersion."</div>
+                            <p class="rhetorical-desc">
+                                Uses the imperative verb <em>Experience</em> directly commanding the audience. It promises emotional transcendence (Pathos) and transitions the prospective customer from observer to participant.
+                            </p>
+                        </div>
+
+                        <div class="rhetorical-card" data-category="etymology">
+                            <div class="rhetorical-card-header">
+                                <span class="rhetorical-label">Etymological Synthesis</span>
+                                <span class="metadata-line" style="margin-bottom: 0;">Brand Nomenclature</span>
+                            </div>
+                            <div class="rhetorical-quote">"AURIX" (Latin: Auris + Aura + -X)</div>
+                            <p class="rhetorical-desc">
+                                Blends Latin <em>Auris</em> (ear/hearing) with <em>Aura</em> (distinctive atmosphere or radiance) and the experimental suffix <em>-X</em>, communicating technological innovation grounded in anatomical precision.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Live Copywriting Sandbox -->
+                    <div class="copy-sandbox-card">
+                        <div class="section-kicker" style="font-size: 0.78rem;">Interactive Evaluation Sandbox</div>
+                        <h3 style="margin-bottom: 12px; color: #ffffff;">Live Headline Evaluator</h3>
+                        <p style="font-size: 0.92rem; margin-bottom: 20px;">
+                            Enter a candidate slogan or advertising line to compute its rhetorical composition, syllable cadence, and persuasion index in real time.
+                        </p>
+
+                        <div class="sandbox-input-group">
+                            <input type="text" id="copy-input" class="sandbox-input" value="Hear Beyond Silence." placeholder="Enter custom slogan...">
+                            <button id="copy-analyze-btn" class="btn btn-primary btn-sm" style="width: 100%;">
+                                Analyze Rhetorical Strength
+                            </button>
+
+                            <div class="copy-preset-row">
+                                <span class="copy-preset-label">Sample Presets:</span>
+                                <button class="copy-preset-btn" data-preset="preset1">Slogan</button>
+                                <button class="copy-preset-btn" data-preset="preset2">Body Copy</button>
+                                <button class="copy-preset-btn" data-preset="preset3">CTA Command</button>
+                                <button class="copy-preset-btn" data-preset="preset4">Poetic Variant</button>
+                            </div>
+                        </div>
+
+                        <div class="sandbox-metrics-grid">
+                            <div class="sandbox-metric">
+                                <div id="copy-score-val" class="metric-val">95/100</div>
+                                <div class="metric-label">Persuasion Index</div>
+                            </div>
+                            <div class="sandbox-metric">
+                                <div id="copy-syllables-val" class="metric-val">5 syl · 3 words</div>
+                                <div class="metric-label">Cadence & Measure</div>
+                            </div>
+                            <div class="sandbox-metric">
+                                <div id="copy-tone-val" class="metric-val">High-Impact / Luxury</div>
+                                <div class="metric-label">Register & Tone</div>
+                            </div>
+                        </div>
+
+                        <div class="sandbox-devices-box">
+                            <div class="inspector-heading">Detected Rhetorical Devices</div>
+                            <ul id="copy-devices-list" class="device-list">
+                                <!-- Populated dynamically by app.js -->
+                            </ul>
+                        </div>
+
+                        <div class="sandbox-critique-box">
+                            <div class="inspector-heading" style="color: var(--accent-scarlet);">Linguistic Critique</div>
+                            <div id="copy-critique-text">
+                                Exceptional campaign copy. The phrasing leverages strong phonological cadence and rhetorical juxtaposition.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             FEATURE 4: DYNAMIC CAMPAIGN QR CODE STUDIO
+             ================================================================== -->
+        <section id="qr-generator" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">04. Interactive QR Studio</span>
+                    <h2>Dynamic Campaign QR Studio</h2>
+                    <p class="section-subtitle">
+                        Generate high-resolution QR codes encoded with project links, technical whitepapers, or repository sources with bespoke AURIX-X obsidian-and-crimson styling.
+                    </p>
+                </div>
+
+                <div class="qr-studio-grid">
+                    <!-- Controls -->
+                    <div class="qr-studio-controls">
+                        <div class="form-group">
+                            <label class="form-label" for="qr-url-input">Target URL or Deep Link</label>
+                            <input type="text" id="qr-url-input" class="form-input" value="https://github.com/AzRaF-18/aurix-get-yours-now">
+                            
+                            <div class="qr-preset-row">
+                                <button class="qr-preset-chip active" data-preset="repo">GitHub Repository</button>
+                                <button class="qr-preset-chip" data-preset="poster">High-Res Poster</button>
+                                <button class="qr-preset-chip" data-preset="english">English Analysis</button>
+                                <button class="qr-preset-chip" data-preset="preorder">Pre-Order Portal</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Color Matrix Styling</label>
+                            <div class="qr-theme-options">
+                                <label class="theme-radio-label">
+                                    <input type="radio" name="qr-theme" value="crimson-dark" checked>
+                                    <span>Crimson on Obsidian (Signature)</span>
+                                </label>
+                                <label class="theme-radio-label">
+                                    <input type="radio" name="qr-theme" value="white-dark">
+                                    <span>Obsidian on Pure White</span>
+                                </label>
+                                <label class="theme-radio-label">
+                                    <input type="radio" name="qr-theme" value="crimson-light">
+                                    <span>Crimson on White</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 14px; margin-top: 32px;">
+                            <button id="qr-generate-btn" class="btn btn-primary">
+                                Regenerate Matrix
+                            </button>
+                            <button id="qr-download-btn" class="btn btn-secondary">
+                                Download PNG
+                            </button>
+                            <button id="qr-copy-btn" class="btn btn-outline">
+                                Copy URL
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Live QR Preview -->
+                    <div class="qr-preview-card">
+                        <div class="qr-preview-box">
+                            <img id="qr-preview-img" class="qr-preview-img" alt="AURIX-X Scannable Campaign QR Code" src="">
+                            <canvas id="qr-fallback-canvas" style="display: none;"></canvas>
+                        </div>
+                        <div id="qr-target-display" class="qr-target-url-caption">
+                            https://github.com/AzRaF-18/aurix-get-yours-now
+                        </div>
+                        <div class="metadata-line" style="margin-bottom: 0;">
+                            <span>Print-Ready 300 DPI</span>
+                            <span class="metadata-separator">·</span>
+                            <span>Level H Error Correction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             FEATURE 5: SIMULATED GITHUB PROJECT INTEGRATION
+             ================================================================== -->
+        <section id="repository" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">05. Source Integration</span>
+                    <h2>GitHub Repository Integration</h2>
+                    <p class="section-subtitle">
+                        Direct connection to the open-source repository <code style="color: var(--accent-scarlet);">AzRaF-18/aurix-get-yours-now</code>. Browse project commits, inspect core files, and clone the codebase.
+                    </p>
+                </div>
+
+                <div class="github-repo-card">
+                    <!-- Repo Header -->
+                    <div class="github-repo-header">
+                        <div class="repo-identity">
+                            <svg class="repo-icon-svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            <span class="repo-name">AzRaF-18 / <span>aurix-get-yours-now</span></span>
+                            <span class="repo-visibility">Public</span>
+                        </div>
+
+                        <div class="repo-actions-cluster">
+                            <button id="github-star-btn" class="gh-action-btn">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <span class="star-label">Star</span>
+                                <span id="github-star-count" style="font-family: var(--font-mono); font-size: 0.78rem;">48</span>
+                            </button>
+
+                            <button id="github-fork-btn" class="gh-action-btn">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M7 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                                <span>Fork</span>
+                                <span id="github-fork-count" style="font-family: var(--font-mono); font-size: 0.78rem;">12</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Clone Bar -->
+                    <div class="clone-bar">
+                        <div class="clone-cmd">
+                            <span style="color: var(--text-muted);">$</span> <span id="clone-command-text">git clone https://github.com/AzRaF-18/aurix-get-yours-now.git</span>
+                        </div>
+                        <button id="copy-clone-btn" class="btn btn-outline btn-sm">
+                            Copy Clone Command
+                        </button>
+                    </div>
+
+                    <!-- File Explorer & Code Preview -->
+                    <div class="github-repo-body">
+                        <div class="repo-file-tree">
+                            <div class="tree-heading">Project Files</div>
+                            <div class="github-file-item active" data-file="index.html">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                <span>index.html</span>
+                            </div>
+                            <div class="github-file-item" data-file="style.css">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                <span>style.css</span>
+                            </div>
+                            <div class="github-file-item" data-file="audio-engine.js">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                <span>audio-engine.js</span>
+                            </div>
+                            <div class="github-file-item" data-file="english-analysis.md">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                <span>english-analysis.md</span>
+                            </div>
+                            <div class="github-file-item" data-file="README.md">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                <span>README.md</span>
+                            </div>
+                        </div>
+
+                        <div class="repo-code-preview">
+                            <div class="code-preview-topbar">
+                                <span id="code-view-filename">index.html</span>
+                                <span style="float: right; color: var(--accent-scarlet);">UTF-8 · Read Only</span>
+                            </div>
+                            <pre id="code-view-content" class="code-preview-content">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;AURIX-X | Precision Audio &amp; English Showcase&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- AURIX-X Flagship Interactive Architecture --&gt;
+    &lt;header class="navbar"&gt;
+        &lt;div class="logo"&gt;AURIX&lt;span&gt;-X&lt;/span&gt;&lt;/div&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section id="hero"&gt;
+            &lt;h1&gt;Sound, Redefined. Hear Beyond Silence.&lt;/h1&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                        </div>
+                    </div>
+
+                    <!-- Commits Timeline -->
+                    <div class="commits-section">
+                        <div class="inspector-heading" style="margin-bottom: 12px;">Recent Commit History</div>
+                        <div class="commit-row">
+                            <span class="commit-msg">feat: migrate to AURIX-X red-and-black aesthetic with Web Audio visualizer</span>
+                            <span class="commit-meta">AzRaF-18 · commit c34f8e1 · Today</span>
+                        </div>
+                        <div class="commit-row">
+                            <span class="commit-msg">feat: integrate dynamic QR code generation studio with print download</span>
+                            <span class="commit-meta">AzRaF-18 · commit 8a1b2d9 · Yesterday</span>
+                        </div>
+                        <div class="commit-row">
+                            <span class="commit-msg">docs: add comprehensive English rhetorical analysis matrix</span>
+                            <span class="commit-meta">AzRaF-18 · commit e729c41 · 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================================================
+         PRE-ORDER ALLOCATION MODAL / LEAD CAPTURE
+         ====================================================================== -->
+    <div id="preorder-modal" class="modal-overlay">
+        <div class="modal-card">
+            <button id="close-preorder-btn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="section-kicker" style="font-size: 0.78rem;">Flagship Reservation</div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 8px;">Pre-Order AURIX-X</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 24px;">
+                Secure your allocation from the initial production batch. Worldwide carbon-neutral priority shipping included.
+            </p>
+
+            <form id="preorder-form">
+                <div class="form-group">
+                    <label class="form-label">Select Chassis Finish</label>
+                    <div class="finish-options-row">
+                        <div class="finish-option active" data-finish="Crimson Obsidian">
+                            <div class="finish-swatch crimson"></div>
+                            <div class="finish-name">Crimson Obsidian</div>
+                        </div>
+                        <div class="finish-option" data-finish="Carbon Stealth">
+                            <div class="finish-swatch carbon"></div>
+                            <div class="finish-name">Carbon Stealth</div>
+                        </div>
+                        <div class="finish-option" data-finish="Phantom Red">
+                            <div class="finish-swatch phantom"></div>
+                            <div class="finish-name">Phantom Red</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <label class="form-label" style="margin-bottom: 2px;">Quantity</label>
+                        <span style="font-size: 0.78rem; color: var(--text-muted);">$299 / unit</span>
+                    </div>
+                    <div class="qty-stepper">
+                        <button type="button" id="qty-minus" class="stepper-btn">-</button>
+                        <input type="text" id="qty-input" class="stepper-input" value="1" readonly>
+                        <button type="button" id="qty-plus" class="stepper-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="order-name">Full Name</label>
+                    <input type="text" id="order-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="order-email">Delivery Email</label>
+                    <input type="email" id="order-email" class="form-input" placeholder="alex@example.com" required>
+                </div>
+
+                <div class="order-summary-box">
+                    <div class="summary-line">
+                        <span>AURIX-X Flagship Transducer</span>
+                        <span id="order-subtotal">$299</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Express Air Shipping</span>
+                        <span style="color: #10b981;">FREE</span>
+                    </div>
+                    <div class="summary-line total">
+                        <span>Total Due</span>
+                        <span id="order-total" style="color: var(--accent-scarlet);">$299</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+                    Confirm & Reserve Allocation
+                </button>
+            </form>
+
+            <div id="preorder-success" style="display: none; text-align: center; padding: 20px 0;">
+                <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); border: 2px solid #10b981; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; color: #10b981; font-size: 1.8rem;">
+                    ✓
+                </div>
+                <h3 style="margin-bottom: 8px;">Allocation Confirmed</h3>
+                <p style="margin-bottom: 16px;">
+                    Your reservation reference is <strong id="order-ref-num" style="color: var(--accent-scarlet); font-family: var(--font-mono);">ARX-829104</strong>. An onboarding briefing and dispatch tracking number have been sent to your email.
+                </p>
+                <button class="btn btn-secondary" onclick="document.getElementById('preorder-modal').classList.remove('open');">
+                    Return to Showcase
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         POSTER LIGHTBOX MODAL
+         ====================================================================== -->
+    <div id="poster-lightbox" class="lightbox-modal">
+        <button id="close-lightbox-btn" class="modal-close-btn" style="top: 30px; right: 30px; font-size: 2.2rem;">&times;</button>
+        <img src="poster-aurix-x.jpg" alt="AURIX-X Full High-Resolution Campaign Poster" class="lightbox-img" referrerpolicy="no-referrer">
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- ======================================================================
+         FOOTER
+         ====================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <a href="#hero" class="brand-wordmark">
+                    AURIX<span>-X</span>
+                </a>
+                <div class="footer-nav">
+                    <a href="#hero">Overview</a>
+                    <a href="#visualizer">Sound Engine</a>
+                    <a href="#poster">The Poster</a>
+                    <a href="#copywriting">English Analysis</a>
+                    <a href="#qr-generator">QR Studio</a>
+                    <a href="https://github.com/AzRaF-18/aurix-get-yours-now" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 AURIX-X English Poster Project. Engineered for high-fidelity interactive showcase.</div>
+                <div>Repository: AzRaF-18/aurix-get-yours-now</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Controller Script -->
+    <script src="app.js"></script>
+</body>
+</html>
